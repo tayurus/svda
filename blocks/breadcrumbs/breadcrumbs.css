@@ -1,0 +1,35 @@
+.breadcrumbs{
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+    margin: 0px auto;
+    font-family: "Open Sans";
+}
+
+.breadcrumbs li:not(:first-child){
+    position: relative;
+    padding-left: 50px;
+}
+
+.breadcrumbs li:not(:first-child)::before{
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 14px;
+    width: 22px;
+    height: 1px;
+    background-color: #959595;
+}
+
+
+.breadcrumbs__item a{
+    font-size: 12px;
+    color: #999999;
+}
+
+.breadcrumbs__item_active a{
+    color: #444444;
+}
