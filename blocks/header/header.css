@@ -1,0 +1,64 @@
+.header{
+    font-family: "Helvetica Neue";
+}
+
+.header__top{
+    background-color: #333333;
+}
+
+.header__top-inner{
+    display: flex;
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.header__logo{
+    width: 195px;
+    height: 65px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__call1{
+    width: 66px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3d3d;
+}
+
+.header__tel{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+header nav{
+    background-color: #efefef;
+}
+
+.header__nav-item{
+    color: #333333;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.header__nav-item:hover{
+    color: #1f3a93;
+    text-decoration: none;
+}
+
+.header__nav-item_active{
+    color: #cf000f;
+}
+
+@media (max-width:430px),(max-device-width:430px) {
+    .header__title{
+        max-width: 300px;
+    }
+}

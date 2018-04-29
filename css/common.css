@@ -1,3 +1,8 @@
+@font-face {
+    src: url("fonts/HelveticaNeueCyr-Medium.otf");
+    font-family: "Helvetica Neue";
+}
+
 *{
     box-sizing: border-box;
 }
