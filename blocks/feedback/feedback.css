@@ -3,6 +3,10 @@
     padding: 50px 0px 85px 0px;
 }
 
+.feedback__carousel{
+    max-width: 878px;
+}
+
 .feedback__wrapper {
     display: flex;
     justify-content: space-between;
