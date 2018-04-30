@@ -1,0 +1,35 @@
+.consultation{
+    max-width: 750px;
+    min-width: 300px;
+    margin: 60px auto;
+    padding: 26px 80px 34px 80px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: #555555;
+}
+
+.consultation__wrapper{
+    max-width: 273px;
+}
+
+.consultation__title{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.consultation__subtitle{
+    color: #eeeeee;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (max-width:767px),(max-device-width:767px) {
+    .consultation{
+        padding: 15px;
+    }
+}
