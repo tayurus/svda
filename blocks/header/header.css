@@ -21,6 +21,20 @@
     align-items: center;
 }
 
+.header__calls-wrapper{
+    min-width: 521px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__calls-wrapper > div{
+    display: flex;
+    width: 239px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header__call1{
     width: 66px;
     height: 65px;
@@ -29,11 +43,62 @@
     align-items: center;
     background-color: #3d3d3d;
 }
+.header__call2{
+    width: 66px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cf000f;
+}
 
 .header__tel{
     color: #ffffff;
     font-size: 17px;
     font-weight: 500;
+}
+
+.header__icons{
+    display: flex;
+}
+
+.header__backcall{
+    padding: 0px 30px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__backcall:hover{
+    text-decoration: underline;
+    color: #cf000f;
+    cursor: pointer;
+}
+
+.header__user{
+    width: 66px;
+    height: 65px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search{
+    width: 66px;
+    height: 65px;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user:hover,.header__search:hover{
+    background-color: #242424;
 }
 
 header nav{
@@ -55,6 +120,40 @@ header nav{
 
 .header__nav-item_active{
     color: #cf000f;
+}
+
+@media (max-width:1130px),(max-device-width:1130px) {
+    .header__top-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__calls-wrapper{
+        margin: 15px 0px;
+    }
+
+    .header__icons{
+        min-width: 524px;
+        justify-content: space-between;
+    }
+
+    .header__backcall{
+        text-align: center;
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width:540px),(max-device-width:540px) {
+    .header__icons{
+        min-width: 95%;
+    }
+
+    .header__calls-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width:430px),(max-device-width:430px) {

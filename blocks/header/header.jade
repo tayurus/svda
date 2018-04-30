@@ -6,17 +6,22 @@ header.header
         .header__top-inner
             a.header__logo(href="#")
                 img(src="img/logo.png", alt="СВДА")
-            a.header__call1(href="#")
-                img(src="img/call1.png", alt="тел")
-            a.header__tel(href="tel:+79253304272") + 7 (925) 330 42 72
-            a.header__tel(href="tel:+74954860318") + 7 (495) 486 03 18
-            a.header__call2(href="#")
-                img(src="img/call2.png", alt="тел")
-            .header__backcall Заказать обратный звонок
-            a.header__user(href="#")
-                img(src="img/user.png", alt="Кабинет")
-            a.header__user(href="#")
-                img(src="img/search.png", alt="Поиск")
+            .header__calls-wrapper
+                div
+                    a.header__call1(href="#")
+                        img(src="img/call1.png", alt="тел")
+                    a.header__tel(href="tel:+79253304272") + 7 (925) 330 42 72
+                div
+                    a.header__tel(href="tel:+74954860318") + 7 (495) 486 03 18
+                    a.header__call2(href="#")
+                        img(src="img/call2.png", alt="тел")
+            .header__icons
+                .header__backcall Заказать обратный звонок
+                a.header__user(href="#")
+                    img(src="img/user.png", alt="Кабинет")
+                a.header__search(href="#")
+                    img(src="img/search.png", alt="Поиск")
+            
         
     nav.navbar.navbar-expand-lg.py-0.px-0.d-flex.justify-content-center.py-4
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#headerNav', aria-controls='headerNav', aria-expanded='false', aria-label='Toggle navigation')
