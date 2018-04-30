@@ -2,6 +2,10 @@
     src: url("fonts/HelveticaNeueCyr-Medium.otf");
     font-family: "Helvetica Neue";
 }
+@font-face {
+    src: url("fonts/OpenSans-SemiBold.ttf");
+    font-family: "Open Sans - Semibold";
+}
 
 *{
     box-sizing: border-box;
@@ -10,4 +14,17 @@
 body{
     margin: 0px;
     padding: 0px;
+}
+
+.vk-icon{
+    width: 21px;
+    height: 12px;
+    display: block;
+    background: url("img/vk.png") no-repeat center / contain;
+}
+.yt-icon{
+    width: 57px;
+    height: 14px;
+    display: block;
+    background: url("img/yt.png") no-repeat center / contain;
 }
