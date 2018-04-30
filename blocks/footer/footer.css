@@ -23,7 +23,7 @@ footer{
 }
 
 .footer__backcall{
-    padding: 0px 30px;
+    padding: 0px 15px;
     background-color: #3d3d3d;
     font-family: "Helvetica Neue";
     color: #ffffff;
@@ -32,6 +32,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer__backcall:hover{
+    text-decoration: underline;
+    color: #cf000f;
+    cursor: pointer;
 }
 
 .footer__label{
