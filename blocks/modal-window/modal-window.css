@@ -1,0 +1,110 @@
+.modal-wrapper{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
+}
+
+.modal-window{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 687px;
+    min-width: 300px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: #555555;
+    padding: 30px 60px;
+    font-family: "Open Sans";
+    z-index: 3;
+}
+
+.modal-window__close{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: url("img/close.png") no-repeat center / contain;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.modal-window__title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.modal-window__input{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    background-color: #616161;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 28px;
+}
+
+.modal-window__input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
+
+.modal-window__input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+
+.modal-window__input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+}
+
+.modal-window [for="modal-window-checkbox"]{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #888888;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    position: relative;
+}
+
+.modal-window [type="checkbox"]{
+    position: absolute;
+    left: 0%;
+}
+
+.modal-window [type="checkbox"]:checked + [for="modal-window-checkbox"]::after{
+    position: absolute;
+    content: "";
+    background: url("img/correct.png") no-repeat center / contain;
+    top: 3px;
+    left: 2px;
+    width: 12px;
+    height: 10px;
+}
+
+.modal-window__label{
+    color: #fafafa;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width:767px),(max-device-width:767px) {
+    .modal-window{
+        padding: 30px;
+    }
+
+    .modal-window__title{
+        font-size: 16px;
+    }
+}

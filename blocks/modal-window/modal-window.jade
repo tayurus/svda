@@ -1,0 +1,13 @@
+.modal-wrapper
+.modal-window
+    .modal-window__close
+    .modal-window__title Заполните форму и мы свяжемся с вами в ближайшее время
+    form
+        input.modal-window__input.mb-2(type="text", name="name," required, placeholder="Ваше имя")
+        input.modal-window__input.mb-4(type="tel", name="tel", required, placeholder="Номер телефона")
+        .d-flex.mb-3.justify-content-center
+            div.mr-2.position-relative
+                input(type="checkbox", required, id="modal-window-checkbox")
+                label(for="modal-window-checkbox")
+            label.modal-window__label - Я даю согласие на обработку  моих персональных данных
+        button.button_modal-window Отправить заявку
