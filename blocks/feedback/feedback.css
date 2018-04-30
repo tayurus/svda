@@ -1,0 +1,105 @@
+.feedback {
+    background-color: #fafafa;
+    padding: 50px 0px 85px 0px;
+}
+
+.feedback__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.feedback__title {
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-right: 100px;
+    border-right: 1px solid #999999;
+    margin: 0px;
+    min-width: 260px;
+}
+
+.feedback__item {
+    max-width: 812px;
+    margin-left: 40px;
+}
+
+.feedback__logo {
+    width: auto !important;
+    max-width: 300px;
+    max-height: 70px;
+}
+
+.feedback__author {
+    max-width: 322px;
+    color: #646464;
+    font-family: "Open Sans - Semibold";
+    line-height: 18px;
+}
+
+.feedback__text {
+    color: #444444;
+    font-family: "Open Sans";
+    line-height: 28px;
+}
+
+.feedback__carousel .owl-nav {
+    max-width: 800px !important;
+    margin-right: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 29px !important;
+    justify-content: space-between !important;
+}
+
+.feedback__carousel .owl-nav button {
+    font-family: "Open Sans - Semibold" !important;
+    font-size: 14px !important;
+    line-height: 28px !important;
+}
+
+.feedback__carousel .owl-nav button.disabled {
+    color: #888888 !important;
+}
+
+.feedback__carousel .owl-nav button:not(.disabled) {
+    color: #1f3a93 !important;
+}
+
+.feedback__carousel-line {
+    width: 50%;
+    opacity: 0.3;
+    height: 2px;
+    background-color: #959595;
+}
+
+@media (max-width:1170px), (max-device-width:1170px) {
+    .feedback__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback__title {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+        border: 0px;
+        padding: 0px;
+    }
+    .feedback__title br {
+        display: none;
+    }
+    .feedback__item {
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+    .feedback__carousel .owl-nav {
+        margin-right: auto;
+        margin: 0px auto;
+        padding-left: 0px !important;
+        padding: 0px 5px !important
+    }
+}
