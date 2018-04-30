@@ -1,0 +1,14 @@
+
+
+.articles__title{
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article__row{
+    display: flex;
+    align-items: center;
+}
