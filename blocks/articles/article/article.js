@@ -4,7 +4,9 @@ owl.owlCarousel({
     nav:true,
     dots:false,
     navText: ["", ""],
-    onDragged: callback
+    onDragged: callback,
+    mouseDrag: false,
+    touchDrag: true
 });
 
 

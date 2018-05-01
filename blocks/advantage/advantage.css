@@ -1,0 +1,35 @@
+.advantage{
+    width: 264px;
+    margin-bottom: 30px;
+}
+
+.advantage__img{
+    min-width: 41px;
+    max-width: 41px;
+    min-height: 40px;
+    max-height: 40px;
+    margin-right: 15px;
+}
+
+.advantage__text{
+    color: #444444;
+    font-family: "Open Sans";
+    line-height: 28px;
+}
+
+.advantage__title{
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:992px),(max-device-width:992px) {
+    .advantage{
+        text-align: left !important;
+    }
+
+}
