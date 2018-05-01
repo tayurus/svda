@@ -1,0 +1,116 @@
+.maps{
+    position: relative;
+}
+
+.maps__title{
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.maps__link{
+    color: #1f3a93;
+    font-family: "Open Sans - Semibold";
+    line-height: 28px;
+}
+
+.maps__row{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1140px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.maps__row_top{
+    top: -50px;
+    align-items: center;
+}
+
+.maps__item{
+    cursor: pointer;
+    max-width: 362px;
+    padding: 40px 35px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
+    background-color: #fafafa;
+}
+
+.maps__item_active{
+    background-color: #ffffff;
+}
+
+.maps__item:hover .maps__position{
+    background: url("img/position-active.png") no-repeat center / contain;
+}
+
+.maps__line{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #1f3a9320;
+}
+
+.maps__text{
+    color: #333333;
+    font-family: "Open Sans - Semibold";
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: 8px;
+}
+
+.maps__position{
+    width: 16px;
+    height: 18px;
+    background: url("img/position.png") no-repeat center / contain;
+}
+
+.maps__position_active{
+    background: url("img/position-active.png") no-repeat center / contain;
+}
+
+.maps__time{
+    width: 16px;
+    height: 16px;
+    background: url("img/time.png") no-repeat center / contain;
+}
+
+.maps__phone{
+    width: 16px;
+    height: 16px;
+    background: url("img/map-phone.png") no-repeat center / contain;
+}
+
+@media (max-width:1190px),(max-device-width:1190px) {
+    .maps iframe{
+        display: none;
+    }
+
+    .maps__row{
+        position: static;
+        transform: none;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .maps__item{
+        margin: 15px;
+    }
+}
+
+@media (max-width:420px),(max-device-width:420px) {
+    .maps__item{
+        padding: 30px 10px;
+    }
+
+    .maps__title{
+        margin: 10px;
+    }
+}
