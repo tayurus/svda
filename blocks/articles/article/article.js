@@ -1,9 +1,17 @@
-$(".article__carousel").owlCarousel({
+let owl = $(".article__carousel");
+owl.owlCarousel({
     items:1,
     nav:true,
     dots:false,
-    navText: ["", ""]
+    navText: ["", ""],
+    onDragged: callback
 });
+
+
+function callback(event) {
+    var item      = event.item.index;     // Position of the current item
+    $(event.target).find('.article__carousel-current').text(item + 1);
+}
 
 $(".article .owl-prev").each(function(index,item) {
     $(item).after("<div class='article__carousel-counter'>\
@@ -17,7 +25,10 @@ $(".article .owl-prev").click(function() {
     let curr = parseInt($(this).siblings().find('.article__carousel-current').text());
     if (curr > 1)
          $(this).siblings().find('.article__carousel-current').text(curr - 1);
-})
+});
+
+
+
 
 $(".article .owl-next").click(function() {
     let curr = parseInt($(this).siblings().find('.article__carousel-current').text());

@@ -4,7 +4,9 @@
 }
 
 .article__tab{
+    width: 385px;
     display: flex;
+    justify-content: space-between;
     background: #fafafa;
 }
 
@@ -83,4 +85,30 @@
 .article__carousel-current{
     color: #cf000f;
     font-weight: 700;
+}
+
+@media (max-width:1200px),(max-device-width:1200px) {
+    .article{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:485px), (max-device-width:485px) {
+    .article__tab{
+        max-width: 280px;
+        padding: 0px;
+        font-size: 13px;
+    }
+
+    .article__tab-icon{
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    .article__map, .article__carousel{
+        max-width: 280px !important;
+        width: 280px !important;
+    }
 }

@@ -27,3 +27,18 @@
 .articles-nav__item_active a{
     color: #ffffff;
 }
+
+.articles-nav-close{
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background: url("img/close_red.png") no-repeat 95% center / 30px 30px;
+}
+
+@media (max-width:1200px),(max-device-width:1200px) {
+    .articles-nav-close{
+        display: block;
+    }
+}
