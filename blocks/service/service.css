@@ -1,0 +1,182 @@
+.service{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    padding: 37px 10px 20px 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service__img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: url("img/mashina-bg.png") no-repeat center / cover;
+    transition: 1s;
+}
+
+
+.service:hover .service__img{
+    transform: scale3d(1.3,1.3,1);
+}
+
+.service:hover .service__title{
+    color: #ffffff;
+}
+
+.service__blackout{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: #00000080;
+}
+
+.service_active .service__blackout{
+    display: block;
+}
+
+.service__icon{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.service__line{
+    width: 72px;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+
+.service__title{
+    position: relative;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.service__icon_mashina{
+    background: url("img/mashina.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_mashina{
+    background: url("img/mashina-active.png") no-repeat center / contain;
+}
+
+
+.service__icon_torg-plochadka{
+    background: url("img/torg-plochadka.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_torg-plochadka{
+    background: url("img/torg-plochadka-active.png") no-repeat center / contain;
+}
+
+.service__icon_shina{
+    background: url("img/shina.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_shina{
+    background: url("img/shina-active.png") no-repeat center / contain;
+}
+
+.service__icon_kluchi{
+    background: url("img/kluchi.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_kluchi{
+    background: url("img/kluchi-active.png") no-repeat center / contain;
+}
+
+
+.service__icon_diagnostic{
+    background: url("img/diagnostic.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_diagnostic{
+    background: url("img/diagnostic-active.png") no-repeat center / contain;
+}
+
+.service__icon_gibdd{
+    background: url("img/gibdd.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_gibdd{
+    background: url("img/gibdd-active.png") no-repeat center / contain;
+}
+
+.service__icon_moyka{
+    background: url("img/moyka.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_moyka{
+    background: url("img/moyka-active.png") no-repeat center / contain;
+}
+
+.service__icon_molotok{
+    background: url("img/molotok.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_molotok{
+    background: url("img/molotok-active.png") no-repeat center / contain;
+}
+
+.service__icon_marshrut{
+    background: url("img/marshrut.png") no-repeat center / contain;
+}
+
+.service_active .service__icon_marshrut{
+    background: url("img/marshrut-active.png") no-repeat center / contain;
+}
+
+
+
+
+
+
+
+
+.service__slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.service__slider-prev{
+    width: 44px;
+    height: 44px;
+    opacity: 0.8;
+    background: #d9333f url("img/service-arrow-left.png") no-repeat center / 9px 17px;
+    cursor: pointer;
+}
+
+.service__slider-text{
+    color: #333333;
+    font-family: "Open Sans - Semibold";
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+}
+
+.service__slider-next{
+    width: 44px;
+    height: 44px;
+    opacity: 0.8;
+    background: #d9333f url("img/service-arrow-right.png") no-repeat center / 9px 17px;
+    cursor: pointer;
+}
+
+.service__slider_disabled{
+    background-color: #c5c5c5;
+    cursor: auto;
+}
