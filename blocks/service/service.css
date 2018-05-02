@@ -5,6 +5,7 @@
     padding: 37px 10px 20px 20px;
     cursor: pointer;
     overflow: hidden;
+    margin: 8px;
 }
 
 .service__img{
@@ -149,6 +150,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 45px;
+    margin-bottom: 15px;
 }
 
 .service__slider-prev{
