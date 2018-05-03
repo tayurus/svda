@@ -1,9 +1,15 @@
+.articles{
+    margin-bottom: 50px;
+}
+
 .articles__title {
     color: #333333;
     font-family: "Open Sans";
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .articles__row {
@@ -26,6 +32,7 @@
     left: 0px !important;
     background-color: #fff !important;
     border-right: 0px !important;
+    z-index: 100;
 }
 
 @media (max-width:1200px), (max-device-width:1200px) {
