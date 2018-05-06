@@ -22,7 +22,12 @@ footer{
     background-color: #cf000f;
 }
 
+.footer__socials{
+    width: 320px;
+}
+
 .footer__backcall{
+    width: 293px;
     padding: 0px 15px;
     background-color: #3d3d3d;
     font-family: "Helvetica Neue";
@@ -32,6 +37,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:767px),(max-device-width:767px) {
+    .footer__backcall, .footer__socials{
+        width: auto;
+    }
 }
 
 .footer__backcall:hover{

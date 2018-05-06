@@ -7,7 +7,7 @@ footer(id="bottom")
         
             #footerNav.collapse.navbar-collapse        
                 .row.justify-content-around
-                    .col-md-4.mb-4.mb-md-0.px-0
+                    .col-md-5.mb-4.mb-md-0.px-0
                         img.img-fluid(src='img/footer-logo.png',alt="СВДА")
                         img.img-fluid.mt-2(src='img/footer-title.png',alt="СВДА")
                         
@@ -16,7 +16,7 @@ footer(id="bottom")
                                 img(src="img/call2.png", alt="тел")
                             .footer__backcall Заказать обратный звонок
                             
-                        .d-flex.mt-4.justify-content-around.justify-content-md-between.align-items-center
+                        .d-flex.mt-4.justify-content-around.justify-content-md-between.align-items-center.footer__socials
                             .footer__label Мы в социальных сетях:
                             a.vk-icon(href="#")
                             a.yt-icon(href="#")
@@ -66,4 +66,10 @@ footer(id="bottom")
                             li.footer__item
                                 a(href="#") Доставка автомобилей
                         
-.footer__bottom © 2017 СВДА. Сиситема возможностей для автопарков. Все права защищены 
+.footer__bottom 
+    .container.d-flex.justify-content-between.align-items-center.flex-column.flex-lg-row
+        span © 2017 СВДА. Система возможностей для автопарков. Все права защищены
+        .d-flex
+            span.mr-3 Сайт разработан
+            a(href="http://web-comp.ru")
+                img(src="img/web-comp.png", alt="web-comp.ru", style="filter:contrast(0%)")

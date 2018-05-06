@@ -1,0 +1,126 @@
+.about-slider {
+    width: 100%;
+    background: #fafafa url("img/about-slider-bg.png") no-repeat center / cover;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+.about-slider__wrapper{
+    max-width: 1271px;
+    margin: 0px auto;
+    display: flex;
+}
+
+.about-slider__left {
+    max-width: 570px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.about-slider__title {
+    max-width: 521px;
+    margin: 0px;
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.about-slider__text {
+    max-width: 521px;
+    color: #444444;
+    font-family: "Open Sans - Semibold";
+    font-size: 18px;
+}
+
+.about-slider__text_bold {
+    font-weight: bold;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+
+.about-slider__nav {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.about-slider__nav-item {
+    cursor: pointer;
+    color: #444444;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.about-slider__line{
+    width: 127px;
+    height: 1px;
+    background-color: #959595;
+}
+
+.about-slider__nav-item_active {
+    color: #cf000f;
+}
+
+.about-slider__slider {
+    max-width: 700px;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.about-slider__item{
+    flex: 0 0 auto;
+    max-width: 701px;
+    padding: 170px 240px 90px 73px;
+    height: 392px;
+    text-decoration: none !important;
+}
+
+.about-slider__item:hover{
+    text-decoration: none;
+}
+
+.about-slider__item span:first-child {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 30px;
+    line-height: 34px;
+    margin-right: 10px;
+    text-decoration: none !important;
+}
+
+.about-slider__item span.line {
+    width: 56px;
+    height: 1px;
+    background-color: #ffffff;
+    text-decoration: none !important;
+}
+
+.about-slider__item h3 {
+    margin: 0px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+.about-slider__item .text {
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none !important;
+}
