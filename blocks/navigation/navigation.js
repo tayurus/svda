@@ -13,27 +13,27 @@ $(window).on('resize scroll', function() {
         $(".navigation").hide();
     }
     else if (isInViewPort($("#service"))){
-        console.log("service");
+        // console.log("service");
         $(".navigation__link").removeClass("navigation__link_active");
         $(".navigation__link[href='#service']").addClass("navigation__link_active");
-        $(".navigation").show();
+        $(".navigation").css({display:"flex"});
     }
     else if (isInViewPort($("#advantage"))){
-        console.log("advantage");
+        // console.log("advantage");
         $(".navigation__link").removeClass("navigation__link_active");
         $(".navigation__link[href='#advantage']").addClass("navigation__link_active");
-        $(".navigation").show();
+        $(".navigation").css({display:"flex"});
     }
     else if (isInViewPort($("#feedback"))){
-        console.log("feedback");
+        // console.log("feedback");
         $(".navigation__link").removeClass("navigation__link_active");
         $(".navigation__link[href='#feedback']").addClass("navigation__link_active");
-        $(".navigation").show();
+        $(".navigation").css({display:"flex"});
     }
     else if (isInViewPort($("#maps"))){
-        console.log("maps");
+        // console.log("maps");
         $(".navigation__link").removeClass("navigation__link_active");
         $(".navigation__link[href='#maps']").addClass("navigation__link_active");
-        $(".navigation").show();
+        $(".navigation").css({display:"flex"});
     }
 });

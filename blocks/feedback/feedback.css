@@ -51,6 +51,12 @@
     line-height: 28px;
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .feedback__text {
+        text-align: justify;
+    }
+}
+
 .feedback__carousel .owl-nav {
     max-width: 800px !important;
     margin-right: auto !important;

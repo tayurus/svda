@@ -73,6 +73,12 @@
     line-height: 24px;
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .miniservice__body {
+        text-align: justify;
+    }
+}
+
 
 @media(max-width: 400px), (max-device-width: 400px){
     .miniservice__img{

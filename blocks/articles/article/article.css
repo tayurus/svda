@@ -47,6 +47,12 @@
     line-height: 27px;
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .article__text {
+        text-align: justify;
+    }
+}
+
 .article__carousel{
     max-width: 374px;
 }

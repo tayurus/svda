@@ -54,6 +54,12 @@
     line-height: 28px;
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .container__service-text{
+        text-align: justify;
+    }
+}
+
 .container__services-list{
     max-width: 640px;
     display: flex;

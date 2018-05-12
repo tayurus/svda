@@ -17,6 +17,12 @@
     line-height: 28px;
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .advantage__text{
+        text-align: justify;
+    }
+}
+
 .advantage__title{
     color: #333333;
     font-family: "Open Sans";

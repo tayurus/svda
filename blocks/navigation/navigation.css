@@ -71,8 +71,8 @@
         right: calc(50% - 540px);
     }
 }
-@media (max-width:1000px),(max-device-width:1000px) {
+@media (max-width:1200px),(max-device-width:1200px) {
     .navigation{
-        display: none;
+        display: none !important;
     }
 }
