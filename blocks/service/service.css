@@ -148,9 +148,12 @@
 .service__slider{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 45px;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    align-self: flex-end;
+    width: 100%;
 }
 
 .service__slider-prev,

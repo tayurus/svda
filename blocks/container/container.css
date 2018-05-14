@@ -27,15 +27,35 @@
 }
 
 .container__service{
-    max-width: 474px;
-    padding-top: 50px;
+    max-width: 509px;
+    padding-top: 38px;
     border-top: 2px solid #1f3a93;
-    margin-right: 97px;
+    margin-right: 70px;
+
+    height: 582px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width:992px),(max-device-width:992px) {
     .container__service{
         margin: 0 auto;
+    }
+}
+
+.container__service-content{
+    max-height: 422px;
+    overflow-y: auto;
+}
+
+@media(max-width: 422px), (max-device-width: 422px){
+    .container__service{
+        height: auto;
+        display: block;
+    }
+    .container__service-content{
+        max-height: none;
     }
 }
 
