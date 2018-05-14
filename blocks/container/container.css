@@ -89,12 +89,6 @@
     margin: -8px;
 }
 
-@media (max-width:1200px) and (min-width:992px),(max-device-width:1200px) and (min-device-width:992px) {
-    .container__services-list{
-        max-width: 408px;
-    }
-}
-
 @media (max-width:422px),(max-device-width:422px) {
     .container__services-list{
         display: none;
