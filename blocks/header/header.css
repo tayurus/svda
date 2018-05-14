@@ -15,7 +15,7 @@ header{
 .header__logo{
     width: 195px;
     height: 65px;
-    background-color: #333;
+    background-color: #efefef;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +105,10 @@ header nav{
     background-color: #efefef;
 }
 
+#headerNav{
+    width: 100%;
+}
+
 .header__nav-item{
     color: #333333;
     font-family: "Helvetica Neue";
@@ -120,6 +124,12 @@ header nav{
 
 .header__nav-item_active{
     color: #cf000f;
+}
+
+.header__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width:1130px),(max-device-width:1130px) {
