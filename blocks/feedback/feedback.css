@@ -114,6 +114,13 @@
     }
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .feedback{
+        padding-top: 10px;
+    }
+}
+
+
 .feedback .owl-nav{
     margin-top: 26px;
 }

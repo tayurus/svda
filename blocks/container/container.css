@@ -26,6 +26,12 @@
     flex-wrap: wrap;
 }
 
+.container_advantage{
+    margin: 80px auto;
+    max-width: 100%;
+    width: 100%;
+}
+
 .container__service{
     max-width: 509px;
     padding-top: 38px;
@@ -77,6 +83,10 @@
 @media (max-width:767px),(max-device-width:767px) {
     .container__service-text{
         text-align: justify;
+    }
+
+    .container_advantage{
+        margin: 20px auto;
     }
 }
 

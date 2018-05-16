@@ -46,6 +46,12 @@
     }
 }
 
+@media (max-width:767px),(max-device-width:767px) {
+    .articles__title{
+        margin: 15px 0px;
+    }
+}
+
 @media (max-width:485px), (max-device-width:485px) {
     .articles-nav-mobile {
         position: absolute;
