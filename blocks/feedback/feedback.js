@@ -9,3 +9,8 @@ $(".feedback__carousel").owlCarousel({
 });
 
 $(".owl-prev").after("<div class='feedback__carousel-line'></div>")
+
+
+$(".feedback__showMore").click(function() {
+    $(".feedback__text").toggleClass("restoreHeight");
+})

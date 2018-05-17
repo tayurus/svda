@@ -51,11 +51,26 @@
     line-height: 28px;
 }
 
+.feedback__showMore{
+    display: none;
+    color: #1f3a93;
+    text-align: right;
+    cursor: pointer;
+}
+
 @media (max-width:767px),(max-device-width:767px) {
     .feedback__text {
         text-align: justify;
+        max-height: 145px;
+        overflow: hidden;
+    }
+
+    .feedback__showMore{
+        display: block;
     }
 }
+
+
 
 .feedback__carousel .owl-nav {
     max-width: 800px !important;

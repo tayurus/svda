@@ -67,6 +67,10 @@
     background: #00000060 !important;
 }
 
+.article__carousel img{
+    max-height: 85vh;
+}
+
 .article__carousel .owl-prev{
     width: 40px !important;
     height: 40px !important;
@@ -97,6 +101,25 @@
     .article{
         margin-left: 0px;
     }
+
+
+}
+
+@media (max-width:992px),(max-device-width:992px) {
+    .article{
+        max-width: 100%;
+        margin: 0px auto;
+    }
+
+    .article__carousel{
+        max-width: 100%;
+    }
+
+    .article__map{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
 }
 
 @media (max-width:485px), (max-device-width:485px) {
