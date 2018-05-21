@@ -45,7 +45,7 @@
         position: absolute;
         left: -1000px;
     }
-    .articles__row {
+    .article__text {
         padding: 0px 15px;
     }
 }
