@@ -68,7 +68,7 @@
 }
 
 .article__carousel img{
-    max-height: 85vh;
+    max-height: 300px;
 }
 
 .article__carousel .owl-prev{
