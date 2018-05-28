@@ -21,11 +21,11 @@ body{
     max-height: inherit !important;
 }
 
-.vk-icon{
+.fb-icon{
     width: 21px;
-    height: 12px;
+    height: 18px;
     display: block;
-    background: url("img/vk.png") no-repeat center / contain;
+    background: url("img/facebook.svg") no-repeat center / contain;
 }
 .yt-icon{
     width: 57px;
