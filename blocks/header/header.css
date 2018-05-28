@@ -17,11 +17,17 @@ header{
     height: 65px;
     background-color: #efefef;
     display: flex;
-    justify-content: center;
+    padding-left: 15px;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.header__logo-lg-none{
+    display: none;
+}
+
 .header__calls-wrapper{
+    width: 100%;
     min-width: 521px;
     flex-grow: 1;
     display: flex;
@@ -60,6 +66,7 @@ header{
 
 .header__icons{
     display: flex;
+    width: 100%;
 }
 
 .header__backcall{
@@ -109,6 +116,11 @@ header nav{
     width: 100%;
 }
 
+#headerNav ul{
+    max-width: 707px;
+    flex-direction: row;
+}
+
 .header__nav-item{
     color: #333333;
     font-family: "Helvetica Neue";
@@ -128,11 +140,18 @@ header nav{
 
 .header__bottom{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
-@media (max-width:1130px),(max-device-width:1130px) {
+@media (max-width:1200px),(max-device-width:1200px) {
+    .header__bottom{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1140px),(max-device-width:1140px) {
     .header__logo{
         width: 100%;
     }
@@ -142,21 +161,44 @@ header nav{
         align-items: center;
     }
 
-    .header__calls-wrapper{
-        margin: 15px 0px;
-    }
 
     .header__icons{
         min-width: 524px;
         justify-content: space-between;
+        background: #efefef;
+    }
+
+    .header__user{
+        background: #efefef;
+        margin-left: auto;
+    }
+
+    .header__search{
+        background: #efefef;
+        margin-right: auto;
     }
 
     .header__backcall{
-        text-align: center;
-        font-size: 15px;
-        padding: 0 10px;
+        display: none;
+    }
+}
+
+@media (max-width:1140px),(max-device-width:1140px) {
+    .header__logo{
+        display: none;
     }
 
+
+
+    .header__logo-lg-none{
+        display: block;
+        width: 195px;
+        height: 65px;
+        background-color: #efefef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width:767px),(max-device-width:767px) {
