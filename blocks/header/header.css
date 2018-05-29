@@ -28,7 +28,6 @@ header{
 
 .header__calls-wrapper{
     width: 100%;
-    min-width: 521px;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
@@ -60,7 +59,7 @@ header{
 
 .header__tel{
     color: #ffffff;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -89,10 +88,16 @@ header{
 .header__user{
     width: 66px;
     height: 65px;
-    background-color: #2e2e2e;
+    background: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header__user > div{
+    width: 30px;
+    height: 30px;
+    background: url("img/user.png") no-repeat center / contain;
 }
 
 .header__search{
@@ -102,6 +107,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header__search > div{
+    width: 30px;
+    height: 30px;
+    background: url("img/search.png") no-repeat center / contain;
 }
 
 .header__user:hover,.header__search:hover{
@@ -145,6 +156,10 @@ header nav{
     align-items: center;
 }
 
+.header__call2-wrapper #telshit{
+    display: none;
+}
+
 @media (max-width:1200px),(max-device-width:1200px) {
     .header__bottom{
         flex-direction: column;
@@ -154,6 +169,17 @@ header nav{
 @media (max-width:992px),(max-device-width:992px) {
     .header__logo{
         width: 100%;
+    }
+
+    .header__user > div{
+        width: 30px;
+        height: 30px;
+        background: url("img/user-gray.png") no-repeat center / contain;
+    }
+    .header__search > div{
+        width: 30px;
+        height: 30px;
+        background: url("img/search-gray.png") no-repeat center / contain;
     }
 
     .header__top-inner{
@@ -216,13 +242,12 @@ header nav{
   #shit{
     display: none !important;
   }
+  .header__call1-wrapper{
+      display: none !important;
+  }
 
-  .header__calls-wrapper{
-      display: flex;
-      width: 96%;
-      flex-direction: column;
-      min-width: auto;
-      align-items: center;
+  .header__call2-wrapper #telshit{
+      display: block;
   }
 }
 
@@ -231,7 +256,13 @@ header nav{
         min-width: 95%;
     }
 
+    .header__user{
+        margin-left: 0px;
+    }
 
+    .header__search{
+        margin-right: auto;
+    }
 
     .header__calls-wrapper > div{
         width: auto;
@@ -243,22 +274,12 @@ header nav{
         margin-right: 5px;
     }
 
-    .header__call1 img{
-        width: 20px;
-    }
-
-    .header__call2{
-        width: 30px;
-        height: 30px;
-        margin-left: 5px;
-    }
-
     .header__call2 img{
         width: 20px;
     }
 }
-/* 
-@media (max-width:430px),(max-device-width:430px) {
+
+@media (max-width:445px),(max-device-width:445px) {
     .header__title{
         max-width: 285px;
     }
@@ -266,4 +287,12 @@ header nav{
     .header__tel{
         font-size: 13px;
     }
-} */
+
+    .header__logo-lg-none{
+        width: 158px;
+    }
+
+    .header__call2{
+        display: none;
+    }
+}

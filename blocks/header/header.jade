@@ -9,12 +9,14 @@ header(id="top")
             .header__calls-wrapper
                 a.header__logo-lg-none(href="#")
                     img(src="img/logo.png", alt="СВДА")
-                div
+                div.header__call1-wrapper.mr-2
                     .header__call1
                         img(src="img/call1.png", alt="тел")
                     a.header__tel(href="tel:+79253304272") + 7 (925) 330 42 72
-                div
-                    a.header__tel(href="tel:+74954860318") + 7 (495) 486 03 18
+                div.header__call2-wrapper
+                    div.mr-3
+                        a.header__tel(id="telshit" href="tel:+74954860318") + 7 (925) 330 42 72
+                        a.header__tel(href="tel:+74954860318") + 7 (495) 486 03 18
                     .header__call2
                         img(src="img/call2.png", alt="тел")
             .header__icons
@@ -22,9 +24,9 @@ header(id="top")
                     img.img-fluid.header__title(src="img/title.png", alt="СВДА")
                 .header__backcall Заказать обратный звонок
                 a.header__user(href="#")
-                    img(src="img/user.png", alt="Кабинет")
+                    div
                 a.header__search(href="#")
-                    img(src="img/search.png", alt="Поиск")
+                    div
                 nav.navbar.navbar-expand-lg.py-0.px-0.d-flex.justify-content-center.flex-column.py-2(style="background: #efefef;")
                     a.d-block.d-md-none(href="#")
                         //- img.img-fluid.header__title(src="img/title.png", alt="СВДА")
